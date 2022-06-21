@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { AiFillUpCircle } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
+import Head from 'next/head'
 
 const  MyApp = ({ Component, pageProps }) => {
   const [clientWindowHeight, setClientWindowHeight] = useState('')
@@ -27,6 +28,13 @@ const  MyApp = ({ Component, pageProps }) => {
 
   return (
     <div className=''>
+      <Head>
+        <title>Shortly</title>
+        <meta 
+          name="description"
+          content="Build your brand's recognition and get detailed insights on how your links are performing."
+        />
+      </Head>
       <NavBar>
       </NavBar>
         <Component {...pageProps} />
