@@ -8,10 +8,10 @@ const MobileNav = ({ activate, onClickActivate }) => {
 
     <Transition
         show={activate}
-        enter="transition duration-150 ease-out"
+        enter="transition duration-100 ease-out"
         enterFrom="transform scale-95 opacity-0"
         enterTo="transform scale-100 opacity-100"
-        leave="transition duration-100 ease-out"
+        leave="transition duration-75 ease-out"
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
         >
@@ -30,8 +30,8 @@ const MobileNav = ({ activate, onClickActivate }) => {
             <br />
 
             <div className="font-poppins font-bold text-white text-center space-y-5 text-lg w-[80%]">
-              <div onClick={() => onClickActivate()} className="cursor-pointer">Login</div>
-              <div onClick={() => onClickActivate()} className="cursor-pointer bg-cyan py-3 w-full rounded-full">Sign Up</div>
+              <div onClick={() => onClickActivate()}className="cursor-pointer">Login</div>
+              <div onClick={() => onClickActivate()}className="cursor-pointer bg-cyan py-3 w-full rounded-full">Sign Up</div>
             </div>
           </div>
         </div>
