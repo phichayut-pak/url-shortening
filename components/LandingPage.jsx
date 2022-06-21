@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import illustrationWorking from '../public/images/illustration-working.svg'
-import mobileIllustartionWorking from '../public/images/mobile-illustration-working.svg'
+import InputBox from './InputBox'
 
 import IllustrationWorking from './IllustrationWorking'
 import MobileIllustrationWorking from './MobileIllustrationWorking'
 
-const LandingPage = () => {
+const LandingPage = ({ addLink }) => {
   const [isWindow, setIsWindow] = useState(null)
   
   useEffect(() => {
@@ -20,7 +18,7 @@ const LandingPage = () => {
   }, [])
 
   return (
-    <div className='w-full relative grid grid-cols-1 lg:grid-cols-2 px-5 lg:pl-32 lg:px-0 py-10 pb-20 z-0 bg-white'>
+    <div className='w-full relative grid grid-cols-1 lg:grid-cols-2 px-5 lg:pl-32 lg:px-0 py-10 pb-36 z-0 bg-white'>
 
       <div className='flex flex-col justify-center items-center lg:items-start order-1 lg:-order-none'>
         <div className="font-poppins font-bold text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center lg:text-left pb-5">
@@ -43,6 +41,11 @@ const LandingPage = () => {
           {isWindow ? <IllustrationWorking className={'transform translate-x-10'}/> : <MobileIllustrationWorking className={'w-full h-full'} />}
         </div>
       </div>
+
+      <InputBox onSubmitLink={addLink}></InputBox>
+      
+      
+      
     </div>
   )
 }
