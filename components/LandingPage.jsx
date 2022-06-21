@@ -20,7 +20,7 @@ const LandingPage = () => {
   }, [])
 
   return (
-    <div className='w-full relative grid grid-cols-1 lg:grid-cols-2 px-5 lg:pl-32 lg:px-0 py-10 z-0'>
+    <div className='w-full relative grid grid-cols-1 lg:grid-cols-2 px-5 lg:pl-32 lg:px-0 py-10 z-0 bg-white'>
       <div className='flex flex-col justify-center items-center lg:items-start order-1 lg:-order-none'>
         <div className="font-poppins font-bold text-4xl lg:text-6xl text-center lg:text-left pb-5">
           <span className='block my-2'>More than just</span>
