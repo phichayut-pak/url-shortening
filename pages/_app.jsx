@@ -27,7 +27,7 @@ const  MyApp = ({ Component, pageProps }) => {
   })
 
   return (
-    <div className=''>
+    <div className='bg-[#F0F1F6] overflow-x-hidden'>
       <Head>
         <title>Shortly</title>
         <meta 

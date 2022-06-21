@@ -14,7 +14,7 @@ const NavBar = ({ children }) => {
 
   return (
     <>
-      <div className="w-full sticky inline-flex justify-between items-center py-10 px-5 lg:px-32">
+      <div className="w-full sticky inline-flex justify-between items-center py-10 px-5 lg:px-32 bg-white">
         <div className="lg:inline-flex justify-center items-center lg:space-x-10">
           <Link href="/" passHref>
             <Image src={logo} alt="Logo" className="cursor-pointer"/>
