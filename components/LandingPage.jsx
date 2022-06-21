@@ -40,7 +40,7 @@ const LandingPage = () => {
       <div className='flex justify-center items-center '>
         <div className='w-full pb-10'>
           {/* <IllustrationWorking className={''}/> */}
-          {isWindow ? <IllustrationWorking /> : <MobileIllustrationWorking className={'w-full h-full'} />}
+          {isWindow ? <IllustrationWorking className={'transform translate-x-10'}/> : <MobileIllustrationWorking className={'w-full h-full'} />}
         </div>
       </div>
     </div>
