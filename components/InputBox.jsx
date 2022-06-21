@@ -69,7 +69,7 @@ const InputBox = ({ className, onSubmitLink }) => {
         <input id="input_link" ref={link} type="text" className={`w-full lg:w-9/12 h-12 rounded-md px-5 font-poppins font-medium text-gray placeholder:font-poppins placeholder:font-medium placeholder:text-gray text-lg placeholder:text-lg outline-none ${!isValid.status ? 'border-2 border-red' : ''}`} placeholder='Shorten a link here...'/>
         <label htmlFor="input_link" className={`font-poppins font-medium text-xs text-red w-full italic ${!isValid.status ? 'block' : 'hidden'}`}>{isValid.message}</label>
         
-        <div className='w-full lg:w-3/12 bg-cyan h-12 rounded-md'>
+        <div className='w-full lg:w-3/12 bg-cyan h-12 rounded-md transition duration-100 ease-in hover:bg-[#9BE3E2]'>
           <button type="submit" onClick={submitHandler} className='inline-flex justify-center items-center w-full h-full font-poppins font-bold text-white text-lg'>Shorten It!</button>
         </div>
       </form>

@@ -48,7 +48,7 @@ const NavBar = ({ children }) => {
 
           <button
             id="signup_btn"
-            className="font-poppins font-bold text-white text-md bg-cyan px-5 py-2 rounded-full transition duration-100 ease-in hover:opacity-50"
+            className="font-poppins font-bold text-white text-md bg-cyan px-5 py-2 rounded-full transition duration-100 ease-in hover:bg-[#9BE3E2]"
           >
             Sign up
           </button>

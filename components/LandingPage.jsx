@@ -30,7 +30,7 @@ const LandingPage = ({ addLink }) => {
           <span className='inline-block lg:block'>Build your brand's recognition and get detailed </span>
           <span className='lg:block'> insights on how your links are performing</span>
         </div>
-        <button className='px-7 py-3 rounded-full bg-cyan font-poppins text-white font-bold transition duration-100 ease-in hover:opacity-50'>
+        <button className='px-7 py-3 rounded-full bg-cyan font-poppins text-white font-bold transition duration-100 ease-in hover:bg-[#9BE3E2]'>
           Get Started
         </button>
       </div>
