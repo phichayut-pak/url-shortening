@@ -23,7 +23,7 @@ const LandingPage = () => {
     <div className='w-full relative grid grid-cols-1 lg:grid-cols-2 px-5 lg:pl-32 lg:px-0 py-10 pb-20 z-0 bg-white'>
 
       <div className='flex flex-col justify-center items-center lg:items-start order-1 lg:-order-none'>
-        <div className="font-poppins font-bold text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center lg:text-left pb-5">
+        <div className="font-poppins font-bold text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center lg:text-left pb-5">
           <span className='block my-2'>More than just</span>
           <span className='block my-2'>shorter links</span>
         </div>
@@ -37,8 +37,8 @@ const LandingPage = () => {
         </button>
       </div>
 
-      <div className='flex justify-center items-center lg:justify-start '>
-        <div className='w-full'>
+      <div className='flex justify-center items-center '>
+        <div className='w-full pb-10'>
           {/* <IllustrationWorking className={''}/> */}
           {isWindow ? <IllustrationWorking /> : <MobileIllustrationWorking className={'w-full h-full'} />}
         </div>
