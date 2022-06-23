@@ -39,7 +39,7 @@ const InputBox = ({ className, onSubmitLink }) => {
     }
 
     const response = await axios.post(`https://api.shrtco.de/v2/shorten?url=${givenLink}`)
-    const data = response.data
+    const data = await response.data
     
 
     if(!data || !data.ok) {
@@ -49,12 +49,12 @@ const InputBox = ({ className, onSubmitLink }) => {
       })
     }
 
-
     onSubmitLink({
       id: new Date().toString(),
       originalLink: givenLink,
       shortenedLink: data.result.full_short_link
     })
+
     link.current.value = ''
     setIsValid({
       status: true,

@@ -32,7 +32,7 @@ const ShortenedLink = ({ originalLink, shortenedLink }) => {
         </div>
 
         <CopyToClipboard text={shortenedLink}>
-          <button onClick={onClickHandler} className={`w-full lg:w-auto px-3 py-2 font-poppins font-medium text-white text-sm rounded-md text-center transition duration-100 ease-in hover:bg-[#9BE3E2] ${ isClicked ? 'bg-dark-violet' : 'bg-cyan'}`}>
+          <button onClick={onClickHandler} className={`w-full lg:w-auto px-3 py-2 font-poppins font-medium text-white text-sm rounded-md text-center transition duration-100 ease-in hover:bg-[#9BE3E2] ${ isClicked ? 'bg-dark-violet hover:bg-dark-violet' : 'bg-cyan'}`}>
             { isClicked ? 'Copied!' : 'Copy'}
           </button>
         </CopyToClipboard>
